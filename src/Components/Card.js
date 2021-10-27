@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 
 function Card() {
     const api = {
-        key : "956ad10e9bb7cd5cf6a742323cd06a96",
+        key : "9cc6658848af538bbc2f4aaa3b301f09",
         url : "https://api.openweathermap.org/data/2.5/", 
     }
 
     const [query,setQuery] = useState('');
     const [weather,setWeather] = useState({});
     const [click,setClick] = useState(true);
-    const [icon,setIcon] = useState('');
 
     const search =(evt)=> {
         evt.preventDefault()
@@ -23,8 +22,6 @@ function Card() {
             }).then(() => setClick(false))
 
     }
-
-    const imageUrl="http://openweathermap.org/img/wn/";
     
     return (
         <div>

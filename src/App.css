@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
+
+html body{
+    font-family: 'Mandali', sans-serif;
+    background-color: #F3F1F5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+    background:linear-gradient(180deg,#E1F2FB,#F3DFE3);
+    width: 400px;
+    height: 450px;
+    padding: 10px;
+    border-radius: 5%;
+    margin: auto;
+    margin: 100px 531px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #3c354b;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-icon {
+    color: #8675A9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-info {
+    display: flex;
+    justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+
+input{
+    width: 200px;
+    height: 35px;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+    letter-spacing: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input:hover {
+    transform: scale(1.2);
 }
+
+@media (max-width:1000px) {
+    .card{
+        margin: auto;
+        margin-top: 80px;
+    }
+}
+

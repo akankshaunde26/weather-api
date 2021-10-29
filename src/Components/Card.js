@@ -33,7 +33,7 @@ function Card() {
                 </div>
                 <i className="fas fa-cloud-sun-rain fa-7x card-icon"></i>
                 <form className="input" onSubmit={search}>
-                   <input type="text" name="city" placeholder="City→" required onChange={(e)=>setQuery(e.target.value)} value={query} ></input>
+                   <input type="text" name="city" placeholder="Search City" required onChange={(e)=>setQuery(e.target.value)} value={query} ></input>
                 </form>
                 </div>
                 :
